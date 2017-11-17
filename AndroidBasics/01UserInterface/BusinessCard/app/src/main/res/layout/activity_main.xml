@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ceystalhorizon" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:maxWidth="125dp"
+        android:adjustViewBounds ="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+    <ImageView
+        android:id="@+id/ultradevs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:maxWidth="175dp"
+        android:adjustViewBounds ="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ultradevs" />
+    <ImageView
+        android:id="@+id/unlimited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ultradevs"
+        android:layout_centerHorizontal="true"
+        android:maxWidth="175dp"
+        android:adjustViewBounds ="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/unlimiteddevelopment" />
+    <ImageView
+        android:id="@+id/github"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="40dp"
+        android:adjustViewBounds ="true"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/unlimited"
+        android:src="@drawable/github" />
+    <TextView
+        android:id="@+id/githubname"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/github"
+        android:layout_toEndOf="@id/github"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="UltraDevsApps"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+    <ImageView
+        android:id="@+id/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="40dp"
+        android:adjustViewBounds ="true"
+        android:scaleType="fitXY"
+        android:layout_below="@id/github"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/web" />
+    <TextView
+        android:id="@+id/webname"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/web"
+        android:layout_toEndOf="@id/web"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="http://ultradevs.blogspot.com"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="40dp"
+        android:adjustViewBounds ="true"
+        android:scaleType="fitXY"
+        android:layout_below="@id/web"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/facebook" />
+    <TextView
+        android:id="@+id/facebookname"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/facebook"
+        android:layout_toEndOf="@id/facebook"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="UltraDevsEGY"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UltraDevs is Egyptian Android Development Team, we support some popular android devices, and soon we’ll support more!"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/facebookname"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+</RelativeLayout>
